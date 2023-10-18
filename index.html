@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+    <body>
+        <div class="container-main">
+            <img class="img-sort" src="./assets/sort.png" alt="img-sort">
+            <h1>Sortear <input value="1" class="quantity-numbers" type="number" placeholder="Quantidade"> número<span
+                    class="add-letter"></span></h1>
+            <div class="container-input">
+                <input type="number" placeholder="Entre" class="input-min" />
+                <input type="number" placeholder="e" class="input-max" />
+            </div>
+            <div class="container-even-odd">
+                <p class="paragraph-container-even-odd">Sortear somente números: </p>
+                <input class="radio" name="radio" type="radio" id="radio-pair" />
+                <label id="label-pair">Pares</label>
+                <input class="radio" name="radio" type="radio" id="radio-odd" />
+                <label id="label-odd">Ímpares</label>
+            </div>
+            <button onclick="generateNumber()" class="btn-draw">Sortear</button>
+            <p class="paragraph-alert"></p>
+            <div class="modal-window" id="modal-id">
+                <div class="modal">
+                    <button class="btn-close-modal" id="close">X</button>
+                    <div class="div-draw-result">
+                        <div class="div-drawn-number">
+                            <h3 class="title-drawn-number"></h3>
+                            <p class="paragraph-drawn-numbers"></p>
+                        </div>
+                    </div>
+                    <div class="div-organization">
+                        <div class="div-date-time">
+                            <h3 class="title-date-time"></h3>
+                            <p class="paragraph-date-time"></p>
+                        </div>
+                        <div class="div-draw-between">
+                            <h3 class="title-draw-between"></h3>
+                            <p class="paragraph-draw-between"></p>
+                        </div>
+                        <div class="div-quantity-numbers-draw">
+                            <h3 class="title-quantity-numbers-draw"></h3>
+                            <p class="paragraph-quantity-numbers-draw"></p>
+                        </div>
+                    </div>
+                    <div class="div-btn-ascending-decreasing">
+                        <button class="btn-ascending-order">Ordenar Crescente</button>
+                        <button class="btn-order-decreasing">Ordenar Decrescente</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>
